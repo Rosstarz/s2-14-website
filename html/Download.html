@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale= 1.0" charset="UTF-8">
+    <title>Download - Caesar and Cleopatra</title>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/Download.css">
+</head>
+<body>
+<div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul>
+                <li class="nav-item"><a href="../html/Homepage.html" class="nav-link">Homepage</a></li>
+                <li class="nav-item"><a href="../html/TheGame.html" class="nav-link">The Game</a></li>
+                <li class="nav-item"><a href="../html/OurTeam.html" class="nav-link">Our Team</a></li>
+                <li class="nav-item"><a href="../html/Leaderboard.html" class="nav-link">Leaderboard</a></li>
+                <li class="nav-item"><a href="../html/Download.html" class="nav-link">Download</a></li>
+                <li class="nav-item"><a href="../html/Deliverables.html" class="nav-link">Deliverables</a></li>
+                <li class="nav-item"><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto;">Login</button>
+            </ul>
+            <div>
+                <div id='login-form' class='login-page'>
+                    <div class="form-box">
+                        <div class='button-box'>
+                            <div id='btn'></div>
+                            <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                            <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                        </div>
+                        <form id='login' class='input-group-login'>
+                            <input type='text' class='input-field' placeholder='Email Id' required >
+                            <input type='password' class='input-field' placeholder='Enter Password' required>
+                            <input type='checkbox' class='check-box'><span>Remember Password</span>
+                            <button type='submit' class='submit-btn'>Log in</button>
+                        </form>
+                        <form id='register' class='input-group-register'>
+                            <input type='text' class='input-field' placeholder='First Name' required>
+                            <input type='text' class='input-field' placeholder='Last Name ' required>
+                            <input type='email' class='input-field' placeholder='Email Id' required>
+                            <input type='password' class='input-field' placeholder='Enter Password' required>
+                            <input type='password' class='input-field' placeholder='Confirm Password'  required>
+                            <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                            <button type='submit' class='submit-btn'>Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-pictures">
+            <img src="../media/caesar.png" class="caesarGreek" alt="Caesar.png">
+            <img src="../media/cleo.png" class="cleoHieroglyph" alt="Cleopatra.png">
+            <img src="../media/Column.PNG" class="top-left" alt="Column.png">
+            <img src="../media/Pyramid.PNG" class="top-right" alt="Pyramid.png">
+        </div>
+    </nav>
+    <h1 class="headerTitle" >DOWNLOAD</h1>
+    <h4 class="headerText">Click on the button to download and play our game Caesar and Cleopatra!</h4>
+    <button class="downloadButton">Download</button>
+</div>
+<div class="eyepic">
+    <img src="../media/eye.png">
+</div>
+<footer>
+    <p>&copy; 2023 Copyright Team 14</p>
+</footer>
+<script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+    var modal = document.getElementById('login-form');
+    window.onclick = function(event)
+    {
+        if (event.target == modal)
+        {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

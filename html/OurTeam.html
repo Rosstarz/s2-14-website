@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+
+    <title>Our Team - Caesar and Cleopatra</title>
+    <link rel="stylesheet" type="text/css" href="../css/OurTeam.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+</head>
+<body>
+<div>
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li class="nav-item"><a href="../html/Homepage.html" class="nav-link">Homepage</a></li>
+                <li class="nav-item"><a href="../html/TheGame.html" class="nav-link">The Game</a></li>
+                <li class="nav-item"><a href="../html/OurTeam.html" class="nav-link">Our Team</a></li>
+                <li class="nav-item"><a href="../html/Leaderboard.html" class="nav-link">Leaderboard</a></li>
+                <li class="nav-item"><a href="../html/Download.html" class="nav-link">Download</a></li>
+                <li class="nav-item"><a href="../html/Deliverables.html" class="nav-link">Deliverables</a></li>
+                <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto;">Login</button></li>
+            </ul>
+            <div>
+                <div id='login-form' class='login-page'>
+                    <div class="form-box">
+                        <div class='button-box'>
+                            <div id='btn'></div>
+                            <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                            <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                        </div>
+                        <form id='login' class='input-group-login'>
+                            <input type='text' class='input-field' placeholder='Email Id' required >
+                            <input type='password' class='input-field' placeholder='Enter Password' required>
+                            <input type='checkbox' class='check-box'><span>Remember Password</span>
+                            <button type='submit' class='submit-btn'>Log in</button>
+                        </form>
+                        <form id='register' class='input-group-register'>
+                            <input type='text' class='input-field' placeholder='First Name' required>
+                            <input type='text' class='input-field' placeholder='Last Name ' required>
+                            <input type='email' class='input-field' placeholder='Email Id' required>
+                            <input type='password' class='input-field' placeholder='Enter Password' required>
+                            <input type='password' class='input-field' placeholder='Confirm Password'  required>
+                            <input type='checkbox' class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                            <button type='submit' class='submit-btn'>Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-pictures">
+            <img src="../media/Column.PNG" class="top-left" alt="Column.png">
+            <img src="../media/Pyramid.PNG" class="top-right" alt="Pyramid.png">
+        </div>
+    </nav>
+    <h1 class="headerTitle" >OUR TEAM</h1>
+    <div class="headerText">
+        <h4>Meet our wonderful team that created this game together. You can see what each team member contributed to the group to make it possible for you to play this amazing game!</h4>
+    </div>
+    <div class="team-container">
+        <div class="member-cards">
+            <img src="../media/member1.png" alt="Member1">
+            <div class="member-intro">
+                <h1>Leonid Romaniukha</h1>
+                <p><span class="name-members">Leonid Romaniukha</span> is one of the main Programmers of the group. He worked a lot on the code and JavaFX and also did other things for Infrastructure, like install PostgreSQL, and worked on the website</p>
+            </div>
+        </div>
+        <div class="member-cards">
+            <img src="../media/member2.png" alt="Member1">
+            <div class="member-intro">
+                <h1>Lukas Nackmayr</h1>
+                <p><span class="name-members">Lukas Nackmayr</span> mainly worked on Infrastructure, creating the backup script and much more. He also worked a lot on Game statistics and a bit on JavaFX</p>
+            </div>
+        </div>
+        <div class="member-cards">
+            <img src="../media/member3.png" alt="Member1">
+            <div class="member-intro">
+                <h1>Rostislav Rucka</h1>
+                <p><span class="name-members">Rostislav Rucka</span> is the other main Programmer of the group. He also worked a ton on the Game logic and JavaFX. He also worked on Infrastructure, installing PostgreSQL.</p>
+            </div>
+        </div>
+        <div class="member-cards">
+            <img src="../media/member4.png" alt="Member1">
+            <div class="member-intro">
+                <h1>Lilit Tsugunyan</h1>
+                <p><span class="name-members">Lilit Tsugunyan</span> also mainly worked on Infrastructure, on the RSYSLOG configuration, creating the backup script with Lukas and more. She also worked a bit on JavaFX and the website.</p>
+            </div>
+        </div>
+    </div>
+    <!--</div>-->
+    <!--<div class="container">-->
+    <!--<div class="parent-container">-->
+    <!--    <div class="image-container">-->
+    <!--    <div class="memberCard">-->
+    <!--        <img src="../media/Member1.png" alt="Team member1">-->
+    <!--    <div class="intro"></div>-->
+    <!--    <h3 class="card-title">Leonid Romaniukha</h3>-->
+    <!--    <p class="memberCard-info"> Hardworking member 1</p>-->
+    <!--    <p class="memberCard-text"> Leonid Romaniukha is one of the main Programmers of the group. He worked a lot on the code and JavaFX and also did other things for Infrastructure, like install PostgreSQL, and worked on the website. </p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+
+    <!--    <div class="container">-->
+    <!--<div class="parent-container">-->
+    <!--    <div class="image-container">-->
+    <!--    <div class="memberCard">-->
+    <!--        <img src="../media/Member2.png" alt="Team member 2">-->
+    <!--     <div class="intro"></div>-->
+    <!--     <h3 class="card-title">Lukas Nackmayr</h3>-->
+    <!--     <p class="memberCard-info">Hardworking member 2</p>-->
+    <!--     <p class="memberCard-text">Lukas Nackmayr mainly worked on Infrastructure, creating the backup script and much more. He also worked a lot on Game statistics and a bit of JavaFX</p>-->
+    <!--         </div>-->
+    <!--     </div>-->
+    <!--</div>-->
+    <!--    </div>-->
+
+    <!--    <div class="container">-->
+    <!--<div class="parent-container">-->
+    <!--    <div class="image-container">-->
+    <!--    <div class="memberCard">-->
+    <!--        <img src="../media/Member3.png" alt="Team member 3">-->
+    <!--     <div class="intro"></div>-->
+    <!--     <h3 class="card-title" >Rostislav Rucka</h3>-->
+    <!--     <p class="memberCard-info">Hardworking member 3</p>-->
+    <!--     <p class="memberCard-text">Rostislav Rucka is the other main Programmer of the group. He also worked a ton on the Game logic and JavaFX. He also worked on Infrastructure, installing PostgreSQL. </p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--    </div>-->
+
+    <!--    <div class="container">-->
+    <!--<div class="parent-container">-->
+    <!--   <div class="image-container">-->
+    <!--   <div class="memberCard">-->
+    <!--        <img src="../media/Member4.png" alt="Team member 4">-->
+    <!--    <div class="intro"></div>-->
+    <!--    <h3 class="card-title">Lilit Tsugunyan</h3>-->
+    <!--    <p class="memberCard-info">Lilit Tsugunyan</p>-->
+    <!--    <p class="memberCard-text">Lilit Tsugunyan also mainly worked on Infrastructure, on the RSYSLOG configuration, creating the backup script with Lukas and more. She also worked a bit on JavaFX and the website.</p>-->
+    <!--        </div>-->
+    <!--     </div>-->
+    <!--   </div>-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+<div class="eyepic">
+    <img src="../media/eye.png">
+</div>
+<footer>
+    <p class="footer-text">&copy; 2023 Copyright Team 14</p>
+</footer>
+
+</body>
+<script>
+    let x=document.getElementById('login');
+    let y=document.getElementById('register');
+    let z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+    let modal = document.getElementById('login-form');
+    window.onclick = function(event)
+    {
+        if (event.target === modal)
+        {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</html>
+

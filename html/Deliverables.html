@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale= 1.0" charset="UTF-8">
+    <title>Deliverables - Caesar and Cleopatra</title>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/Deliverables.css">
+</head>
+<body>
+<div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul>
+                <li class="nav-item"><a href="../html/Homepage.html" class="nav-link">Homepage</a></li>
+                <li class="nav-item"><a href="../html/TheGame.html" class="nav-link">The Game</a></li>
+                <li class="nav-item"><a href="../html/OurTeam.html" class="nav-link">Our Team</a></li>
+                <li class="nav-item"><a href="../html/Leaderboard.html" class="nav-link">Leaderboard</a></li>
+                <li class="nav-item"><a href="../html/Download.html" class="nav-link">Download</a></li>
+                <li class="nav-item"><a href="../html/Deliverables.html" class="nav-link">Deliverables</a></li>
+                <li class="nav-item"><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto;">Login</button>
+            </ul>
+            <div>
+                <div id='login-form' class='login-page'>
+                    <div class="form-box">
+                        <div class='button-box'>
+                            <div id='btn'></div>
+                            <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                            <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                        </div>
+                        <form id='login' class='input-group-login'>
+                            <input type='text' class='input-field' placeholder='Email Id' required >
+                            <input type='password' class='input-field' placeholder='Enter Password' required>
+                            <input type='checkbox' class='check-box'><span>Remember Password</span>
+                            <button type='submit' class='submit-btn'>Log in</button>
+                        </form>
+                        <form id='register' class='input-group-register'>
+                            <input type='text' class='input-field' placeholder='First Name' required>
+                            <input type='text' class='input-field' placeholder='Last Name ' required>
+                            <input type='email' class='input-field' placeholder='Email Id' required>
+                            <input type='password' class='input-field' placeholder='Enter Password' required>
+                            <input type='password' class='input-field' placeholder='Confirm Password'  required>
+                            <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                            <button type='submit' class='submit-btn'>Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-pictures">
+            <img src="../media/Column.PNG" class="top-left" alt="Column.png">
+            <img src="../media/Pyramid.PNG" class="top-right" alt="Pyramid.png">
+            <img src="../media/caesar.png" class="caesarGreek" alt="Caesar.png">
+            <img src="../media/cleo.png" class="cleoHieroglyph" alt="Cleopatra.png">
+        </div>
+    </nav>
+    <h1 class="headerTitle" >DELIVERABLES</h1>
+    <h4 class="headerText">Here are all the documents that contain all the information and step by step analysis of our deliverables.</h4>
+    <p class="headerText">1. Click <a class="other-links" href="https://docs.google.com/document/d/144V229_Kcf-yRwHjKV36Kvxb0Bk_w6bZwZgNytW93iI/edit#heading=h.8phvar8bs8ww">-HERE-</a> for our Infrastructure documentation.</p>
+    <p class="headerText">2. Click <a class="other-links" href="../../javaDoc/App/model/package-summary.html"> -HERE- </a> for our Java Documentation. </p>
+<!--Rulebased-->
+    <div class="laurelpic">
+        <img src="../media/laurel.png">
+    </div>
+</div>
+
+<script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+    var modal = document.getElementById('login-form');
+    window.onclick = function(event)
+    {
+        if (event.target == modal)
+        {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<footer>
+    <p>&copy; 2023 Copyright Team 14</p>
+</footer>
+</body>
+
+</html>

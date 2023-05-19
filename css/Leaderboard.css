@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Cinzel, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 25px #333333;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 3px solid #333333;
+    font-size: 15px;
+    color: wheat;
+    text-shadow: 5px 5px 30px black;
+}
+
+th {
+    background-color: #333333;
+}
+
+tr:hover {
+    background-color: #cc9c76;
+}
+
+
+.laurelpic {
+    filter: drop-shadow(2px 4px 20px rgba(0, 0, 0, 0.3));
+    text-align: center;
+}
+
+.laurelpic img{
+    width: 10%;
+    padding-top: 150px;
+}
+
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale= 1.0" charset="UTF-8">
+    <title>The Game - Caesar and Cleopatra</title>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/TheGame.css">
+</head>
+<body>
+<div>
+    <!-- <img src="../media/caesar.png" class="caesarGreek" alt="Caesar.png">
+    <img src="../media/cleo.png" class="cleoHieroglyph" alt="Cleopatra.png"> -->
+
+    <div>
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li class="nav-item"><a href="../html/Homepage.html" class="nav-link">Homepage</a></li>
+                    <li class="nav-item"><a href="../html/TheGame.html" class="nav-link">The Game</a></li>
+                    <li class="nav-item"><a href="../html/OurTeam.html" class="nav-link">Our Team</a></li>
+                    <li class="nav-item"><a href="../html/Leaderboard.html" class="nav-link">Leaderboard</a></li>
+                    <li class="nav-item"><a href="../html/Download.html" class="nav-link">Download</a></li>
+                    <li class="nav-item"><a href="../html/Deliverables.html" class="nav-link">Deliverables</a></li>
+                    <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto;">Login</button>
+                </ul>
+                <div>
+                    <div id='login-form' class='login-page'>
+                        <div class="form-box">
+                            <div class='button-box'>
+                                <div id='btn'></div>
+                                <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                                <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                            </div>
+                            <form id='login' class='input-group-login'>
+                                <input type='text' class='input-field' placeholder='Email Id' required >
+                                <input type='password' class='input-field' placeholder='Enter Password' required>
+                                <input type='checkbox' class='check-box'><span>Remember Password</span>
+                                <button type='submit' class='submit-btn'>Log in</button>
+                            </form>
+                            <form id='register' class='input-group-register'>
+                                <input type='text' class='input-field' placeholder='First Name' required>
+                                <input type='text' class='input-field' placeholder='Last Name ' required>
+                                <input type='email' class='input-field' placeholder='Email Id' required>
+                                <input type='password' class='input-field' placeholder='Enter Password' required>
+                                <input type='password' class='input-field' placeholder='Confirm Password'  required>
+                                <input type='checkbox' class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                                <button type='submit' class='submit-btn'>Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <div class="nav-pictures">
+            <img src="../media/Column.PNG" class="top-left" alt="Column.png">
+            <img src="../media/Pyramid.PNG" class="top-right" alt="Pyramid.png">
+        </div>
+    </div>
+    <h1 class="headerTitle" >THE GAME</h1>
+    <h4 class="headerText">Since its first creation in 1997, the Caesar and Cleopatra game has had several editions added to it from various different languages.
+        The Game is based around two of the greatest leaders known in history. A quarrel between Caesar and Cleopatra turned into a captivating card game.
+        Live vicariously through one of these rulers and try to win by either invading Egypt with Caesar’s great army, or freeing Egypt from Caesar’s shackles and seeking independence as Cleopatra.</h4>
+
+    <div class="gamepic">
+        <img src="../media/gamepic.png">
+    </div>
+
+    <h1 class="headerTitle">RULES</h1>
+    <h4 class="headerText">Here are the rules to the game: In this game, you must obtain the most amount of patrician cards. There are two options. You can either choose:</h4>
+    <h4 class="headerText">1. To play actively and you must follow all of these rules</h4>
+    <h5 class="rulesText"> - play one action card</h5>
+    <h5 class="rulesText"> - play one or two influence cards</h5>
+    <h5 class="rulesText">  - draw cards to refill your hand</h5>
+    <h5 class="rulesText">  - draw the next vote of confidence card.</h5>
+    <h4 class="headerText">or</h4>
+    <h4 class="headerText">2. The second option is to play passively: You may discard cards from your hand and draw to replace them. The player with the most amount of points/patrician cards wins the game.</h4>
+
+<!--    <div class="image-with-text">-->
+<!--        <img src="../media/cardDeck.png" alt="Card Deck">-->
+<!--    </div>-->
+    <div class="image-with-text">
+        <img src="../media/cardDeck.png" alt="Card Deck">
+
+        <p class="cards"> <br>Components of the game:</br>
+
+            <br> - 50 Roman Cards </br>
+            <br> - 50 Egyptian Cards </br>
+            <br> - 6 Influence Bonus Cards </br>
+            <br> - 21 Patrician Cards (5 Groups) </br>
+            <br> - 8 Vote of Confidence Cards </br>
+
+        </p>
+
+    </div>
+</div>
+<div>
+    <h1 class="headerTitle">MORE DETAIL</h1>
+</div>
+<div>
+    <p class="headerText">For more indepth explanation for all the different specific rules, go to <a class="other-links" href="https://www.ultraboardgames.com/caesar-and-cleopatra/game-rules.php"> -this- </a> website</p>
+</div>
+
+<div class="laurelpic">
+    <img src="../media/laurel.png">
+</div>
+
+
+<footer>
+    <p>&copy; 2023 Copyright Team 14</p>
+</footer>
+</body>
+<script>
+    let x=document.getElementById('login');
+    let y=document.getElementById('register');
+    let z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+    let modal = document.getElementById('login-form');
+    window.onclick = function(event)
+    {
+        if (event.target === modal)
+        {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</html>

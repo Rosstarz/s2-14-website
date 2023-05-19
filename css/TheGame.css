@@ -1,0 +1,95 @@
+body{
+    font-family: Cinzel, sans-serif;
+    margin: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+.gamepic{
+    text-align: center;
+    filter: drop-shadow(2px 4px 20px rgba(0, 0, 0, 0.3));
+    margin: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gamepic:hover {
+    transform: scale(1.2);
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: translateY(-10px);
+}
+
+.fullRules{
+    text-align: center;
+}
+
+.rulesText{
+    font-size: 20px;
+    text-align: center;
+}
+
+.image-with-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    padding-bottom: 70px;
+    /*font-size: 20px;*/
+    /*margin: 100px;*/
+    /*padding: 3rem;*/
+    /*font-family: 'Cinzel', sans-serif;*/
+    /*text-align: center;*/
+    /*filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));*/
+    /*color: #333;*/
+    /*width: 200rem;*/
+    /*height: auto;*/
+}
+
+.image-with-text:hover {
+    transform: scale(1.2);
+}
+.cards{
+    font-size: 15px;
+}
+.image-with-text img {
+    float: left;
+    margin-right: 10px;
+    padding: 3rem;
+}
+
+.image-with-text .text {
+    padding: 3rem;
+
+}
+
+.laurelpic {
+    text-align: center;
+    filter: drop-shadow(2px 4px 20px rgba(0, 0, 0, 0.3));
+}
+
+.laurelpic img{
+    width: 10%;
+    padding-bottom: 30px;
+}
+
+
+
+
+/*.text-components {*/
+/*    font-size: 0.5rem;*/
+/*    margin: 100px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: flex-end;*/
+
+/*}*/

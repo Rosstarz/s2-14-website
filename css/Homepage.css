@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, #618891,#cc9c76);
+    font-family: Cinzel, sans-serif;
+}
+
+/*slide out bar*/
+
+.container {
+    display: inline-block;
+}
+
+
+.container:hover .navbar {
+    left: 200px;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+a[href="../html/Homepage.html"]:visited + .homepageTitle {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.homepageTitle {
+    text-align: center;
+    color:#333;
+    font-family: 'Cinzel', sans-serif;
+    padding-top: 30rem;
+    font-size: 6rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.homepageTitle.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+    .homepageTitle{
+        padding-top: 20rem;
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .homepageTitle{
+        padding-top: 10rem;
+        font-size: 3rem;
+    }
+}
+
+
+
+.homepageText {
+    text-align: center;
+    color: burlywood;
+    font-family: 'Cinzel', sans-serif;
+    padding-top: 20px;
+    font-size: 20px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
+    animation: fadeIn 1s ease-in-out;
+
+}
+
